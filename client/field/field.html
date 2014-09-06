@@ -2,10 +2,13 @@
   <div class="field">
 
     {{#each cPlayers}}
-    <div class="{{fieldPosition}}">{{firstName}}
-      <div class="marker"></div>
-      <span class="glyphicon glyphicon-remove remove-name"></span>
-    </div>
+      <div class="{{fieldPosition}} player-box">
+        <button type="button" class="btn btn-primary player-edit">
+          <span class="glyphicon glyphicon-user"></span>
+        </button>
+        <!-- <span class="glyphicon glyphicon-remove remove-name"></span> -->
+          <p>{{firstName}}</p>
+      </div>
     {{/each}}
 
   </div>

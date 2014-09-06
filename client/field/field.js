@@ -4,7 +4,7 @@
 // we are attaching a function to that object
 //    that will return all of the players in our Players Collection (table)
 Template.tField.cPlayers = function() {
-  return Players.find();
+  return Players.find({gameStatus: undefined});
 };
 
 // when someone clicks on a class of remove-name

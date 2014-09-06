@@ -1,0 +1,14 @@
+<template name="tRoster">
+<h2>Substitutes</h2>
+{{#if haveSubs}}
+  <ol>
+    {{#each players}}
+      <li>
+        {{firstName}}
+      </li>
+    {{/each}}
+  </ol>
+{{else}}
+no subs
+{{/if}}
+</template>
