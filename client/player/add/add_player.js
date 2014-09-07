@@ -40,11 +40,12 @@ Template.tAddPlayer.events({
         var firstName = tmpl.find('.first-name').value;
         var fieldPosition = tmpl.find('.field-position').value;
         var gameStatus = tmpl.find('.game-status').value;
+        var gerseyNumber = tmpl.find('.gersey-number').value;
         Session.set("sPlayerEdit", false);
         // call the addPlayer method (note below it is a variable that has a function tied to it)
         //  and pass the addPlayer method, the variable firstName (which remember..
              // hold whatever the user typed in the text box... the name of the player)
-        addPlayer(firstName, fieldPosition, gameStatus);
+        addPlayer(firstName, fieldPosition, gameStatus, gerseyNumber);
     },
     'keyup .first-name':function(evt, tmpl) {
       // console.log(evt.which);
@@ -58,12 +59,13 @@ Template.tAddPlayer.events({
             var firstName = tmpl.find('.first-name').value;
             var fieldPosition = tmpl.find('.field-position').value;
             var gameStatus = tmpl.find('.game-status').value;
+            var gerseyNumber = tmpl.find('.gersey-number').value;
             // set the session sPlayerEdit to false
             Session.set("sPlayerEdit", false);
             // call the addPlayer method (note below it is a variable that has a function tied to it)
             //  and pass the addPlayer method, the variable firstName (which remember..
                  // hold whatever the user typed in the text box... the name of the player)
-            addPlayer(firstName, fieldPosition, gameStatus);
+            addPlayer(firstName, fieldPosition, gameStatus, gerseyNumber);
       }
     }
 });
@@ -72,10 +74,11 @@ Template.tAddPlayer.events({
 // it takes the firstName argument that was passed and stores it in its parameter
 //   then the method takes the parameter value and uses MongoDb syntax
 //   to insert the name into our collection (aka table)
-var addPlayer = function(firstName, fieldPosition, gameStatus) {
+var addPlayer = function(firstName, fieldPosition, gameStatus, gerseyNumber) {
   Players.insert({
     firstName: firstName,
     fieldPosition: fieldPosition,
-    gameStatus: gameStatus
+    gameStatus: gameStatus,
+    gerseyNumber: gerseyNumber
   });
-}
+};
