@@ -4,7 +4,19 @@
 // we are attaching a function to that object
 //    that will return all of the players in our Players Collection (table)
 Template.tField.cPlayers = function() {
-  return Players.find({gameStatus: "starting"});
+  return Players.find({
+    gameStatus: "starting"
+  });
+};
+
+Template.tField.helpers({
+    moneyOwed: function(evt, tmpl) {
+      var totalFeesStillOwed = this.seasonFeeOwed - this.seasonFeePaid;
+      if (totalFeesStillOwed > 0) {
+        return "$" + totalFeesStillOwed;
+      }
+    }
+  )
 };
 
 // when someone clicks on a class of remove-name
@@ -15,10 +27,10 @@ Template.tField.cPlayers = function() {
 //     with an each statement, this will refer to that particular
 //     record (this._id...... grabs the unique id)
 Template.tField.events({
-    'click .remove-name': function(evt, tmpl) {
-        Session.set('sPlayerId', this._id);
-        removePlayer();
-    }
+  'click .remove-name': function(evt, tmpl) {
+    Session.set('sPlayerId', this._id);
+    removePlayer();
+  }
 });
 
 // use Mongo to remove the record by passing it the primary key
@@ -26,5 +38,7 @@ Template.tField.events({
 // result: should remove the player from the list (and obviously)
 //   the collection
 var removePlayer = function() {
-  Players.remove({_id:Session.get('sPlayerId')});
+  Players.remove({
+    _id: Session.get('sPlayerId')
+  });
 };

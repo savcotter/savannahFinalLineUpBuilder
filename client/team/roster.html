@@ -1,10 +1,11 @@
 <template name="tRoster">
 <h2>Substitutes</h2>
+
 {{#if haveSubs}}
   <ol>
     {{#each players}}
       <li>
-        {{firstName}} <span class="badge">{{gerseyNumber}}</span> <span class="glyphicon glyphicon-trash remove-sub"></span>
+        {{firstName}} <span class="oweStuff">{{moneyOwed}}</span><span class="badge">{{gerseyNumber}}</span> <span class="glyphicon glyphicon-trash remove-sub"></span>
       </li>
     {{/each}}
   </ol>
@@ -16,7 +17,7 @@ no subs
   <ol>
     {{#each playersOff}}
       <li>
-        {{firstName}} <span class="badge">{{gerseyNumber}}</span> <span class="glyphicon glyphicon-trash remove-sub"></span>
+        {{firstName}} <span class="oweStuff">{{moneyOwed}}</span><span class="badge">{{gerseyNumber}}</span> <span class="glyphicon glyphicon-trash remove-sub"></span>
       </li>
     {{/each}}
   </ol>
