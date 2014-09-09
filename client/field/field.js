@@ -16,8 +16,7 @@ Template.tField.helpers({
         return "$" + totalFeesStillOwed;
       }
     }
-  )
-};
+});
 
 // when someone clicks on a class of remove-name
 // set the session 'sPlayerId' to the id of that record
