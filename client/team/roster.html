@@ -3,7 +3,7 @@
 
 {{#if haveSubs}}
   <ol>
-    {{#each players}}
+    {{#each cPlayers}}
       <li>
         {{firstName}} <span class="oweStuff">{{moneyOwed}}</span><span class="badge">{{gerseyNumber}}</span> <span class="glyphicon glyphicon-trash remove-sub"></span>
       </li>
@@ -15,7 +15,7 @@ no subs
 <h2>Out This Week</h2>
 {{#if missingPlayers}}
   <ol>
-    {{#each playersOff}}
+    {{#each cPlayersOff}}
       <li>
         {{firstName}} <span class="oweStuff">{{moneyOwed}}</span><span class="badge">{{gerseyNumber}}</span> <span class="glyphicon glyphicon-trash remove-sub"></span>
       </li>

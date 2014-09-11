@@ -1,4 +1,4 @@
-Template.tRoster.players = function() {
+Template.tRoster.cPlayers = function() {
   return Players.find({
     gameStatus: "sub"
   }, {
@@ -8,7 +8,7 @@ Template.tRoster.players = function() {
   });
 };
 
-Template.tRoster.playersOff = function() {
+Template.tRoster.cPlayersOff = function() {
   return Players.find({
     gameStatus: "out"
   }, {
@@ -35,8 +35,9 @@ Template.tRoster.helpers({
   },
   moneyOwed: function(evt, tmpl) {
     var totalFeesStillOwed = this.seasonFeeOwed - this.seasonFeePaid;
+    console.log(typeof totalFeesStillOwed);
     if (totalFeesStillOwed > 0) {
-      return "$" + totalFeesStillOwed;
+      return totalFeesStillOwed;
     }
   }
 

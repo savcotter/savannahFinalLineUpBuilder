@@ -1,4 +1,4 @@
-Template.tModalPlayer.player = function() {
+Template.tModalPlayer.cPlayer = function() {
   return Players.findOne({_id:Session.get("sPlayerId")});
 };
 

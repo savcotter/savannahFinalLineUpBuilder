@@ -37,7 +37,7 @@ Template.tAddPlayer.events({
     var fieldPosition = $('.field-position').val();
     var gameStatus = $('.game-status').val();
     var gerseyNumber = $('.gersey-number').val();
-    var seasonFeeOwed = $('.seasonFeeOwed').val();
+    var seasonFeeOwed = $('.season-fee-owed').val();
     var seasonFeePaid = $('.season-fee-paid').val();
     // below is another way to grab the values without jquery
     // var seasonFeePaid = tmpl.find('.season-fee-paid').value;
