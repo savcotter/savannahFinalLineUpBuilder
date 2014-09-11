@@ -9,6 +9,10 @@ Template.tField.cPlayers = function() {
   });
 };
 
+Template.tField.sPlayerId = function() {
+  return Session.get("sPlayerId");
+};
+
 Template.tField.helpers({
     moneyOwed: function(evt, tmpl) {
       var totalFeesStillOwed = this.seasonFeeOwed - this.seasonFeePaid;
@@ -27,8 +31,14 @@ Template.tField.helpers({
 //     record (this._id...... grabs the unique id)
 Template.tField.events({
   'click .remove-name': function(evt, tmpl) {
-    Session.set('sPlayerId', this._id);
+    Session.set("sPlayerId", this._id);
     removePlayer();
+  },
+  'click .player-edit':function(evt, tmpl) {
+    Session.set("sPlayerId", this._id);
+    console.log(this._id);
+    evt.preventDefault();
+    $("#modal-id").modal("show");
   }
 });
 
