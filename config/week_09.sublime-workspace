@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"season",
+				"seasonFeePaid"
+			],
+			[
+				"seasonfeepaid",
+				"season-fee-paid"
+			],
+			[
 				"even",
 				"events	Meteor: Template.myTemplate.events(eventMap)"
 			],
@@ -79,30 +87,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "/Users/phowley/Dropbox/meteor-stuff/lub_v2/client/team/roster.html",
-			"settings":
-			{
-				"buffer_size": 572,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/phowley/Dropbox/meteor-stuff/lub_v2/client/player/add/add_player.html",
-			"settings":
-			{
-				"buffer_size": 1341,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/phowley/Dropbox/meteor-stuff/lub_v2/client/player/add/add_player.js",
-			"settings":
-			{
-				"buffer_size": 4200,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -519,12 +503,20 @@
 	[
 		"/Users/phowley/Dropbox/meteor-stuff/lub_v2",
 		"/Users/phowley/Dropbox/meteor-stuff/lub_v2/client",
+		"/Users/phowley/Dropbox/meteor-stuff/lub_v2/client/field",
 		"/Users/phowley/Dropbox/meteor-stuff/lub_v2/client/player",
-		"/Users/phowley/Dropbox/meteor-stuff/lub_v2/client/player/add",
 		"/Users/phowley/Dropbox/meteor-stuff/lub_v2/client/team"
 	],
 	"file_history":
 	[
+		"/Users/phowley/Dropbox/meteor-stuff/lub_v2/client/player/add/add_player.js",
+		"/Users/phowley/Dropbox/meteor-stuff/lub_v2/client/field/field.less",
+		"/Users/phowley/Dropbox/meteor-stuff/lub_v2/client/field/field.js",
+		"/Users/phowley/Dropbox/meteor-stuff/lub_v2/client/team/roster.js",
+		"/Users/phowley/Dropbox/meteor-stuff/lub_v2/client/team/roster.less",
+		"/Users/phowley/Dropbox/meteor-stuff/lub_v2/client/field/field.html",
+		"/Users/phowley/Dropbox/meteor-stuff/lub_v2/client/team/roster.html",
+		"/Users/phowley/Dropbox/meteor-stuff/lub_v2/client/player/add/add_player.html",
 		"/Users/phowley/.bash_profile",
 		"/Users/phowley/Desktop/week_08_lub/client/player/add/add_player.js",
 		"/Users/phowley/Desktop/week_08_lub/client/main.html",
@@ -644,15 +636,7 @@
 		"/Users/phowley/Desktop/fba2/client/views/pages/homepage.html",
 		"/Users/phowley/Desktop/full_blown_app/client/views/projects.html",
 		"/Users/phowley/Desktop/full_blown_app/client/views/about.html",
-		"/Users/phowley/Desktop/full_blown_app/lib/router.js",
-		"/Users/phowley/Desktop/full_blown_app/client/views/menu.html",
-		"/Users/phowley/Dropbox/meteor-stuff/calendar_app_tutorial/client/main.js",
-		"/Users/phowley/Dropbox/meteor-stuff/calendar_app_tutorial/client/views/calendar/edit_event.html",
-		"/Users/phowley/Dropbox/meteor-stuff/calendar_app_tutorial/client/views/calendar/calendar.html",
-		"/Users/phowley/Dropbox/meteor-stuff/calendar_app_tutorial/client/views/calendar/calendar.js",
-		"/Users/phowley/Library/Application Support/Sublime Text 3/Packages/User/html/input-text.sublime-snippet",
-		"/Users/phowley/Dropbox/meteor-stuff/calendar_app_tutorial/packages/iron-router/.build/npm/node_modules/connect/lib/middleware/methodOverride.js",
-		"/Users/phowley/Dropbox/meteor-stuff/calendar_app_tutorial/.meteor/local/build/programs/ctl/node_modules/esprima/test/module.html"
+		"/Users/phowley/Desktop/full_blown_app/lib/router.js"
 	],
 	"find":
 	{
@@ -726,7 +710,7 @@
 		[
 			"Done"
 		],
-		"reverse": false,
+		"reverse": true,
 		"show_context": true,
 		"use_buffer2": true,
 		"whole_word": false,
@@ -735,105 +719,14 @@
 	"groups":
 	[
 		{
-			"selected": 2,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "/Users/phowley/Dropbox/meteor-stuff/lub_v2/client/team/roster.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 572,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/Users/phowley/Dropbox/meteor-stuff/lub_v2/client/player/add/add_player.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1341,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								282,
-								282
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "/Users/phowley/Dropbox/meteor-stuff/lub_v2/client/player/add/add_player.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4200,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								877,
-								877
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 457.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 33.0
+		"height": 41.0
 	},
 	"input":
 	{

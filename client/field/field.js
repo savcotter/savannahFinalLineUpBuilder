@@ -6,7 +6,7 @@
 Template.tField.cPlayers = function() {
   return Players.find({
     gameStatus: "starting"
-  });
+  })
 };
 
 Template.tField.helpers({
@@ -16,8 +16,7 @@ Template.tField.helpers({
         return "$" + totalFeesStillOwed;
       }
     }
-  )
-};
+});
 
 // when someone clicks on a class of remove-name
 // set the session 'sPlayerId' to the id of that record
