@@ -35,7 +35,6 @@ Template.tRoster.helpers({
   },
   moneyOwed: function(evt, tmpl) {
     var totalFeesStillOwed = this.seasonFeeOwed - this.seasonFeePaid;
-    console.log(typeof totalFeesStillOwed);
     if (totalFeesStillOwed > 0) {
       return totalFeesStillOwed;
     }

@@ -1,5 +1,5 @@
 <template name="tModalPlayer">
-<h1>Yo</h1>
+
    <!-- modal for editing player -->
               <div class="modal fade" id="modal-id">
                 <div class="modal-dialog">
@@ -9,11 +9,11 @@
                       <h4 class="modal-title">Starting Player</h4>
                     </div>
                     <div class="modal-body">
-                      <input type="text" value="{{cPlayer.firstName}}" />
+                      <input type="text" class="first-name" value="{{cPlayer.firstName}}" />
                     </div>
                     <div class="modal-footer">
                       <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-primary">Save changes</button>
+                      <button type="button" class="btn btn-primary save-changes">Save changes</button>
                     </div>
                   </div><!-- /.modal-content -->
                 </div><!-- /.modal-dialog -->

@@ -36,7 +36,6 @@ Template.tField.events({
   },
   'click .player-edit':function(evt, tmpl) {
     Session.set("sPlayerId", this._id);
-    console.log(this._id);
     evt.preventDefault();
     $("#modal-id").modal("show");
   }
