@@ -5,7 +5,10 @@
   <ol>
     {{#each cStarters}}
       <li>
-        {{firstName}} <span class="badge">{{gerseyNumber}}</span> <span class="glyphicon glyphicon-trash remove-starter"></span>
+        {{firstName}} <span class="badge">{{gerseyNumber}}</span> <span class="glyphicon glyphicon-trash remove-player"></span> <span class="glyphicon glyphicon-pencil edit-player"></span>
+        <ul>
+          <li>{{fieldPosition}}</li>
+        </ul>
       </li>
     {{/each}}
   </ol>

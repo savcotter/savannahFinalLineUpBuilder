@@ -1,12 +1,12 @@
-Template.tRoster.cPlayer = function() {
+Template.tSubs.cPlayer = function() {
   return Players.findOne({_id:Session.get("sPlayerId")});
 };
 
-Template.tRoster.sPlayerId = function() {
+Template.tSubs.sPlayerId = function() {
   Session.get("sPlayerId");
 };
 
-Template.tRoster.cPlayers = function() {
+Template.tSubs.cPlayers = function() {
   return Players.find({
     gameStatus: "sub"
   }, {
@@ -16,17 +16,9 @@ Template.tRoster.cPlayers = function() {
   });
 };
 
-Template.tRoster.cPlayersOff = function() {
-  return Players.find({
-    gameStatus: "out"
-  }, {
-    sort: {
-      firstName: 1
-    }
-  });
-};
 
-Template.tRoster.helpers({
+
+Template.tSubs.helpers({
   haveSubs: function() {
     if (Players.find({
       gameStatus: "sub"
@@ -50,16 +42,16 @@ Template.tRoster.helpers({
 
 });
 
-Template.tRoster.events({
-  'click .remove-sub': function(evt, tmpl) {
+Template.tSubs.events({
+  'click .remove-player': function(evt, tmpl) {
     Session.set('sPlayerId', this._id);
     removePlayer();
     Session.set('sPlayerId', null);
   },
-  'click .edit-sub': function(evt, tmpl) {
+  'click .edit-player': function(evt, tmpl) {
     // need access to session
     Session.set('sPlayerId', this._id);
-    $("modal-id");
+    $("#modal-id").modal("show")
   }
 });
 

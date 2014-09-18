@@ -14,10 +14,15 @@ Template.tStarting.cStarters = function() {
 };
 
 Template.tStarting.events({
-  'click .remove-starter': function(evt, tmpl) {
+  'click .remove-player': function(evt, tmpl) {
     Session.set('sPlayerId', this._id);
     removePlayer();
     Session.set('sPlayerId', null);
+  },
+  'click .edit-player': function(evt, tmpl) {
+    // need access to session
+    Session.set('sPlayerId', this._id);
+    $("#modal-id").modal("show")
   }
 });
 

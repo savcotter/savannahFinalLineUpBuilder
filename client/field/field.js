@@ -17,7 +17,7 @@ Template.tField.helpers({
     moneyOwed: function(evt, tmpl) {
       var totalFeesStillOwed = this.seasonFeeOwed - this.seasonFeePaid;
       if (totalFeesStillOwed > 0) {
-        return "$" + totalFeesStillOwed;
+        return totalFeesStillOwed;
       }
     }
 });
