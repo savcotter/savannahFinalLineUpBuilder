@@ -1,0 +1,15 @@
+<template name="tStarting">
+<h2>Starting Lineup</h2>
+
+{{#if cStarters}}
+  <ol>
+    {{#each cStarters}}
+      <li>
+        {{firstName}} <span class="oweStuff">{{moneyOwed}}</span><span class="badge">{{gerseyNumber}}</span> <span class="glyphicon glyphicon-trash remove-sub"></span>
+      </li>
+    {{/each}}
+  </ol>
+{{else}}
+no subs
+{{/if}}
+</template>

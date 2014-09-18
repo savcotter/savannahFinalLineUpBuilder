@@ -9,14 +9,18 @@ Template.tModalPlayer.sPlayerId = function() {
 Template.tModalPlayer.events({
  'click .save-changes':function(evt, tmpl) {
   var firstName = tmpl.find('.first-name').value;
-  updatePlayer(firstName);
+  var gameStatus = tmpl.find('.game-status').value;
+  updatePlayer(firstName, gameStatus);
   $("#modal-id").modal("hide");
   Session.set('sPlayerId', null);
  }
 });
 
-var updatePlayer = function(firstName) {
-  Players.update(Session.get("sPlayerId"), {$set: {firstName: firstName}});
+var updatePlayer = function(firstName, gameStatus) {
+  Players.update(Session.get("sPlayerId"), {$set: {
+    firstName: firstName,
+    gameStatus: gameStatus
+  }});
   return true;
 }
 
