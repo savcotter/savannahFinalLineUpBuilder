@@ -1,11 +1,11 @@
 <template name="tRoster">
 <h2>Substitutes</h2>
-
+{{> tAddPlayer}}
 {{#if haveSubs}}
   <ol>
     {{#each cPlayers}}
       <li>
-        {{firstName}} <span class="oweStuff">{{moneyOwed}}</span><span class="badge">{{gerseyNumber}}</span> <span class="glyphicon glyphicon-trash remove-sub"></span>
+        {{firstName}} <span class="oweStuff">{{moneyOwed}}</span><span class="badge">{{gerseyNumber}}</span> <span class="glyphicon glyphicon-trash remove-sub"></span> <span class="glyphicon glyphicon-pencil edit-sub"></span>
       </li>
     {{/each}}
   </ol>

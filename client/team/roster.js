@@ -1,3 +1,11 @@
+Template.tRoster.cPlayer = function() {
+  return Players.findOne({_id:Session.get("sPlayerId")});
+};
+
+Template.tRoster.sPlayerId = function() {
+  Session.get("sPlayerId");
+};
+
 Template.tRoster.cPlayers = function() {
   return Players.find({
     gameStatus: "sub"
@@ -47,6 +55,11 @@ Template.tRoster.events({
     Session.set('sPlayerId', this._id);
     removePlayer();
     Session.set('sPlayerId', null);
+  },
+  'click .edit-sub': function(evt, tmpl) {
+    // need access to session
+    Session.set('sPlayerId', this._id);
+    $("modal-id");
   }
 });
 
