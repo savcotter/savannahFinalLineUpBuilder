@@ -1,4 +1,5 @@
 Meteor.startup(function() {
+  //BrowserPolicy.content.allowOriginForAll('*.bootstrapcdn.com');
   // code to run on server at startup
   // put this on the server
   // call it on the console to remove all your data
