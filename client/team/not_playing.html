@@ -4,7 +4,8 @@
   <ol>
     {{#each cPlayersOff}}
       <li>
-        {{firstName}} <span class="oweStuff">{{moneyOwed}}</span><span class="badge">{{gerseyNumber}}</span> <span class="glyphicon glyphicon-trash remove-player"></span> <i class="fa fa-pencil"></i>
+        {{firstName}} <span class="oweStuff">{{moneyOwed}}</span><span class="badge">{{gerseyNumber}}</span>
+        {{> tRemoveEditPlayer}}
       </li>
     {{/each}}
   </ol>

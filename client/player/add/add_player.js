@@ -33,12 +33,15 @@ Template.tAddPlayer.events({
     // so you can refer to them and use them inside this function (like in the next line)
     //   grab the class of first-name, get the value inside text box and store
     // store that value inside the variable firstName
-    var firstName = $('.first-name').val();
-    var fieldPosition = $('.field-position').val();
-    var gameStatus = $('.game-status').val();
-    var gerseyNumber = $('.gersey-number').val();
-    var seasonFeeOwed = $('.season-fee-owed').val();
-    var seasonFeePaid = $('.season-fee-paid').val();
+    // var firstName = $('.first-name').val();
+    var firstName = tmpl.find('.first-name').value;
+    var fieldPosition = tmpl.find('.field-position').value;
+    var gameStatus = tmpl.find('.game-status').value;
+    var gerseyNumber = tmpl.find('.gersey-number').value;
+    var seasonFeeOwed = tmpl.find('.season-fee-owed').value;
+    var seasonFeePaid = tmpl.find('.season-fee-paid').value;
+    
+
     // below is another way to grab the values without jquery
     // var seasonFeePaid = tmpl.find('.season-fee-paid').value;
     Session.set("sPlayerEdit", false);
@@ -57,10 +60,12 @@ Template.tAddPlayer.events({
       // so you can refer to them and use them inside this function (like in the next line)
       //   grab the class of first-name, get the value inside text box and store
       // store that value inside the variable firstName
-      var firstName = tmpl.find('.first-name').value;
-      var fieldPosition = tmpl.find('.field-position').value;
-      var gameStatus = tmpl.find('.game-status').value;
-      var gerseyNumber = tmpl.find('.gersey-number').value;
+      var firstName = $('.first-name').val();
+    var fieldPosition = $('.field-position').val();
+    var gameStatus = $('.game-status').val();
+    var gerseyNumber = $('.gersey-number').val();
+    var seasonFeeOwed = $('.season-fee-owed').val();
+    var seasonFeePaid = $('.season-fee-paid').val();
       // set the session sPlayerEdit to false
       Session.set("sPlayerEdit", false);
       // call the addPlayer method (note below it is a variable that has a function tied to it)

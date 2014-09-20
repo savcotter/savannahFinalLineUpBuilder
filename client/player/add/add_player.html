@@ -7,9 +7,15 @@
 
       {{#if sPlayerEdit}}
 
-      <input type="text" class="first-name form-control" placeholder="first name" autofocus />
+      <input type="text" class="form-control first-name" placeholder="first name" />
       <input type="text" class="form-control field-position" placeholder="field position">
-      <input type="text" class="form-control game-status" placeholder="game status">
+     <!--  <input type="text" class="form-control game-status" placeholder="game status"> -->
+     <select class="game-status form-control">
+      <option value="starting">Starting</option>
+      <option value="sub">Substitute</option>
+      <option value="out">Not Playing</option>
+      <option value="legacy">Former Player</option>
+    </select>
       <input type="text" class="form-control gersey-number" placeholder="gersey number">
       <input type="text" class="form-control season-fee-owed" placeholder="season fee">
       <input type="text" class="form-control season-fee-paid" placeholder="season fee paid">

@@ -13,16 +13,22 @@
             <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
               <label for="firstName">First Name</label>
               <input type="text" class="first-name form-control" name="firstName" value="{{cPlayer.firstName}}" />
-              <label for="gameStatus">Game Status</label>
-              <input type="text" class="game-status form-control" name="gameStatus" value="{{cPlayer.gameStatus}}" />
               <label for="fieldPosition">Field Position</label>
               <input type="text" class="field-position form-control" name="fieldPosition" value="{{cPlayer.fieldPosition}}" />
+              <!-- <input type="text" class="game-status form-control" name="gameStatus" value="{{cPlayer.gameStatus}}" /> -->
+              <label for="gameStatus">Game Status</label>
+               <select class="game-status form-control">
+                <option value="starting">Starting</option>
+                <option value="sub">Substitute</option>
+                <option value="out">Not Playing</option>
+                <option value="former">Former Player</option>
+              </select>
               <label for="gerseyNumber">Gersey Number</label>
-              <input type="text" class="game-status form-control" name="gerseyNumber" value="{{cPlayer.gerseyNumber}}" />
+              <input type="text" class="gersey-number form-control" name="gerseyNumber" value="{{cPlayer.gerseyNumber}}" />
               <label for="seasonFeeOwed">Season Fee Owed</label>
-              <input type="text" class="game-status form-control" name="seasonFeeOwed" value="{{cPlayer.seasonFeeOwed}}" />
+              <input type="text" class="season-fee-owed form-control" name="seasonFeeOwed" value="{{cPlayer.seasonFeeOwed}}" />
               <label for="seasonFeePaid">Season Fee Paid</label>
-              <input type="text" class="game-status form-control" name="seasonFeePaid" value="{{cPlayer.seasonFeePaid}}" />
+              <input type="text" class="season-fee-paid form-control" name="seasonFeePaid" value="{{cPlayer.seasonFeePaid}}" />
             </div>
           </div>
         </div>

@@ -1,9 +1,9 @@
-<template name="tRoster">
-<h2>Game Day Roster</h2>
+<template name="tFormerPlayers">
+<h2>Former Players</h2>
 
-{{#if cRoster}}
+{{#if cFormerPlayers}}
   <ol>
-    {{#each cRoster}}
+    {{#each cFormerPlayers}}
       <li>
         {{firstName}} <span class="badge">{{gerseyNumber}}</span> 
         {{> tRemoveEditPlayer}}
@@ -15,6 +15,6 @@
   </ol>
 
 {{else}}
-<p>no starting players</p>
+<p>no players on this team</p>
 {{/if}}
 </template>
