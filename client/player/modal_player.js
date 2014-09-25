@@ -9,13 +9,7 @@ Template.tModalPlayer.sPlayerId = function() {
 };
 
 // getting drop downs to populate properly
-// var dropdownMenu = function() {
-//   console.log( this.findAll );
-//   var player = Players.findOne({
-//     _id: Session.get('sPlayerId')
-//   });
-//   // $('.game-status').val(player.gameStatus);
-// };
+
 
 
 Template.tModalPlayer.events({
