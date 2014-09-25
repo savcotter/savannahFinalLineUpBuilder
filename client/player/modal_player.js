@@ -12,7 +12,6 @@ Template.tModalPlayer.sPlayerId = function() {
 Template.tModalPlayer.rendered = function(evt, tmpl) {
     var id = Session.get('sPlayerId');
     var answer = Players.findOne(id);
-    console.log( cPlayer );
 
     
   if (Session.get('sPlayerId')) {

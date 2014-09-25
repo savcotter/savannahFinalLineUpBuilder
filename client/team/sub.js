@@ -30,12 +30,6 @@ Template.tSubs.helpers({
     }).count() > 0) {
       return true;
     }
-  },
-  moneyOwed: function(evt, tmpl) {
-    var totalFeesStillOwed = this.seasonFeeOwed - this.seasonFeePaid;
-    if (totalFeesStillOwed > 0) {
-      return totalFeesStillOwed;
-    }
   }
 
 });

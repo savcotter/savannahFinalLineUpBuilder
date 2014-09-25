@@ -4,7 +4,7 @@
   <ol>
     {{#each cStarters}}
       <li>
-        {{firstName}} <span class="badge">{{gerseyNumber}}</span> 
+        {{firstName}} <span class="badge">{{gerseyNumber}}</span> <span class="{{moneyOwedStyle}}">{{moneyOwed}}</span>
         {{> tRemoveEditPlayer}}
       </li>
     {{/each}}
