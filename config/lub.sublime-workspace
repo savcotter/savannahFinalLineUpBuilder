@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"game",
+				"game-status"
+			],
+			[
 				"even",
 				"events	Meteor: Template.myTemplate.events(eventMap)"
 			],
@@ -83,9 +87,17 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 387.0,
+		"height": 207.0,
 		"selected_items":
 		[
+			[
+				"metif",
+				"Snippet: Meteor {{#if}}"
+			],
+			[
+				"met",
+				"Snippet: Meteor Template Tag"
+			],
 			[
 				"save",
 				"Project: Save As"
@@ -143,10 +155,6 @@
 				"Snippet: bs3-jumbotron"
 			],
 			[
-				"met",
-				"Snippet: Meteor Template Tag"
-			],
-			[
 				"ju",
 				"Snippet: bs3-jumbotron"
 			],
@@ -201,10 +209,6 @@
 			[
 				"lab",
 				"Snippet: label-text-input"
-			],
-			[
-				"metif",
-				"Snippet: Meteor {{#if}}"
 			],
 			[
 				"label",
@@ -471,7 +475,7 @@
 				"Project: Save As"
 			]
 		],
-		"width": 467.0
+		"width": 575.0
 	},
 	"console":
 	{
@@ -493,10 +497,33 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/phowley/Dropbox/meteor-stuff/lub_v2"
+		"/Users/phowley/Dropbox/meteor-stuff/lub_v2",
+		"/Users/phowley/Dropbox/meteor-stuff/lub_v2/client",
+		"/Users/phowley/Dropbox/meteor-stuff/lub_v2/client/common",
+		"/Users/phowley/Dropbox/meteor-stuff/lub_v2/client/css",
+		"/Users/phowley/Dropbox/meteor-stuff/lub_v2/client/player",
+		"/Users/phowley/Dropbox/meteor-stuff/lub_v2/client/player/add",
+		"/Users/phowley/Dropbox/meteor-stuff/lub_v2/client/player/edit",
+		"/Users/phowley/Dropbox/meteor-stuff/lub_v2/client/team"
 	],
 	"file_history":
 	[
+		"/Users/phowley/Dropbox/meteor-stuff/lub_v2/client/common/remove_edit_player.html",
+		"/Users/phowley/Dropbox/meteor-stuff/lub_v2/client/team/not_playing.html",
+		"/Users/phowley/Dropbox/meteor-stuff/lub_v2/client/team/former_players.html",
+		"/Users/phowley/Dropbox/meteor-stuff/lub_v2/client/team/former_players.js",
+		"/Users/phowley/Dropbox/meteor-stuff/lub_v2/client/team/subs.html",
+		"/Users/phowley/Dropbox/meteor-stuff/lub_v2/client/team/roster.html",
+		"/Users/phowley/Dropbox/meteor-stuff/lub_v2/client/team/starters.js",
+		"/Users/phowley/Dropbox/meteor-stuff/lub_v2/client/team/starters.html",
+		"/Users/phowley/Dropbox/meteor-stuff/lub_v2/client/player/modal_player.js",
+		"/Users/phowley/Dropbox/meteor-stuff/lub_v2/client/main.html",
+		"/Users/phowley/Dropbox/meteor-stuff/lub_v2/client/team/starting_lineup.html",
+		"/Users/phowley/Dropbox/meteor-stuff/lub_v2/client/player/add/add_player.html",
+		"/Users/phowley/Dropbox/meteor-stuff/lub_v2/client/player/modal_player.html",
+		"/Users/phowley/Dropbox/meteor-stuff/lub_v2/client/team/legacy_players.js",
+		"/Users/phowley/Dropbox/meteor-stuff/lub_v2/.meteor/local/build/programs/ctl/node_modules/cordova/node_modules/cordova-lib/node_modules/shelljs/test/resources/find/dir1/a_dir1",
+		"/Users/phowley/Dropbox/meteor-stuff/lub_v2/client/team/all_players.html",
 		"/Users/phowley/Library/Application Support/Sublime Text 3/Packages/User/Gist.sublime-settings",
 		"/Users/phowley/Dropbox/meteor-stuff/goal/client/views/pages/cardio/edit/edit_cardio.html",
 		"/Users/phowley/Dropbox/meteor-stuff/goal/lib/router.js",
@@ -608,23 +635,7 @@
 		"/Users/phowley/Dropbox/meteor-stuff/calendar_app_tutorial/collections/calendar.js",
 		"/Users/phowley/Library/Application Support/Sublime Text 3/Packages/User/javascript/def-meteor-session.sublime-snippet",
 		"/Users/phowley/Dropbox/meteor-stuff/calendar_app_tutorial/client/main.html",
-		"/Users/phowley/Dropbox/meteor-stuff/calendar_app_tutorial/.meteor/local/build/programs/server/npm/minifiers/main/node_modules/uglify-js/lib/mozilla-ast.js",
-		"/Users/phowley/Dropbox/meteor-stuff/calendar_app_tutorial/packages/blaze-layout/layout.js",
-		"/Users/phowley/Dropbox/meteor-stuff/calendar_app_tutorial/client/views/home/home_page.html",
-		"/Users/phowley/Dropbox/meteor-stuff/calendar_app_tutorial/client/views/application/menu.html",
-		"/Users/phowley/Dropbox/meteor-stuff/calendar_app_tutorial/lib/router.js",
-		"/Users/phowley/Library/Application Support/Sublime Text 3/Packages/User/javascript/full-calender.sublime-snippet",
-		"/Users/phowley/Dropbox/meteor-stuff/calendar_app_tutorial/calendar_app_tutorial.js",
-		"/Users/phowley/Dropbox/meteor-stuff/calendar_app_tutorial/calendar_app_tutorial.html",
-		"/Users/phowley/Dropbox/meteor-stuff/calendar_app_tutorial/calendar_app_tutorial.css",
-		"/Users/phowley/Dropbox/meteor-stuff/calendar_app_tutorial/client/views/application/layout.html",
-		"/Users/phowley/Desktop/leaderboard/leaderboard.css",
-		"/Users/phowley/Desktop/week_03/main.html",
-		"/Users/phowley/Desktop/week_03/client/stylesheets/less/style.less",
-		"/Users/phowley/Dropbox/meteor-stuff/mydos/client/views/todos/create_todo_item/create_todo_item.html",
-		"/Users/phowley/Dropbox/meteor-stuff/mydos/client/views/todos/todos_count/todos_count.js",
-		"/Users/phowley/Dropbox/meteor-stuff/mydos/client/app.less",
-		"/Users/phowley/Dropbox/meteor-stuff/mydos/client/controllers/todos/todos_index.js"
+		"/Users/phowley/Dropbox/meteor-stuff/calendar_app_tutorial/.meteor/local/build/programs/server/npm/minifiers/main/node_modules/uglify-js/lib/mozilla-ast.js"
 	],
 	"find":
 	{
@@ -642,6 +653,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"tSubs",
+			"cAllPlayers",
 			"i",
 			"client",
 			"child",
@@ -759,6 +772,10 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"add",
+				"client/player/add/add_player.html"
+			],
 			[
 				"cars",
 				"client/views/pages/cars.html"

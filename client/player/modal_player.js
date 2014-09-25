@@ -9,21 +9,14 @@ Template.tModalPlayer.sPlayerId = function() {
 };
 
 // getting drop downs to populate properly
-Template.tModalPlayer.rendered = function(evt, tmpl) {
-    var id = Session.get('sPlayerId');
-    var answer = Players.findOne(id);
-    console.log( cPlayer );
+// var dropdownMenu = function() {
+//   console.log( this.findAll );
+//   var player = Players.findOne({
+//     _id: Session.get('sPlayerId')
+//   });
+//   // $('.game-status').val(player.gameStatus);
+// };
 
-    
-  if (Session.get('sPlayerId')) {
-
-    var cPlayer = Players.findOne({
-      _id: Session.get('sPlayerId')
-    });
-  }
-  //$('.game-status').val(cPlayer.gameStatus);
-  //tmpl.find('.game-status').value(player.gameStatus);
-};
 
 Template.tModalPlayer.events({
   'click .save-changes': function(evt, tmpl) {

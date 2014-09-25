@@ -4,6 +4,28 @@
 Template.tAddPlayer.sPlayerEdit = function() {
   return Session.get('sPlayerEdit');
 };
+Template.tAddPlayer.sPlayerId = function() {
+  return Session.get('sPlayerId');
+};
+
+UI.body.events({
+  'click': function (evt, tmpl) {
+    // console.log( evt.which );
+    if (Session.get("sPlayerEdit") === true) {
+      Session.set("sPlayerEdit", false);
+    } else {
+      Session.set("sPlayerEdit", true);
+    }
+  }
+});
+
+// getting drop downs to populate properly
+// Template.tAddPlayer.rendered = function(evt, tmpl) {
+//   var player = Players.findOne({
+//     _id: Session.get('sPlayerId')
+//   });
+//   $('.game-status').val(player.gameStatus);
+// };
 
 // Template.tAddPlayer.rendered = function(evt, tmpl) {
 //   $('.first-name').val("").focus();
@@ -14,7 +36,10 @@ Template.tAddPlayer.events({
   // when someone clicks a class of player-edit
   // set the session sPlayerEdit to true
   'click .player-edit': function(evt, tmpl) {
+    if (Session.get("sPlayerEdit", false)) {
+      
     Session.set("sPlayerEdit", true);
+    }
     // tmpl.find('.first-name').focus();
 
   },

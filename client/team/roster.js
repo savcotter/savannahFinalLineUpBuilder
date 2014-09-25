@@ -24,7 +24,9 @@ Template.tRoster.events({
     'click .edit-player': function(evt, tmpl) {
         // need access to session
         Session.set('sPlayerId', this._id);
-        $("#modal-id").modal("show")
+        $("#modal-id").modal("show");
+        var player = Players.findOne(Session.get("sPlayerId"));
+        $(".game-status").val(player.gameStatus);
     }
 });
 

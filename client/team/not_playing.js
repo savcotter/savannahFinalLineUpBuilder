@@ -6,6 +6,8 @@ Template.tNotPlaying.sPlayerId = function() {
   Session.get("sPlayerId");
 };
 
+
+
 Template.tNotPlaying.cPlayersOff = function() {
   return Players.find({
     gameStatus: "out"
@@ -42,7 +44,9 @@ Template.tNotPlaying.events({
   'click .edit-player': function(evt, tmpl) {
     // need access to session
     Session.set('sPlayerId', this._id);
-    $("#modal-id").modal("show")
+    $("#modal-id").modal("show");
+    var player = Players.findOne(Session.get("sPlayerId"));
+    $(".game-status").val(player.gameStatus);
   }
 });
 

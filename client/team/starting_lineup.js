@@ -37,6 +37,8 @@ Template.tStartingLineup.events({
         Session.set("sPlayerId", this._id);
         evt.preventDefault();
         $("#modal-id").modal("show");
+        var player = Players.findOne(Session.get("sPlayerId"));
+        $(".game-status").val(player.gameStatus);
     }
 });
 

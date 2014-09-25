@@ -1,3 +1,7 @@
+Meteor.publish('players', function(){
+  return Players.find();
+});
+
 Meteor.startup(function() {
   //BrowserPolicy.content.allowOriginForAll('*.bootstrapcdn.com');
   // code to run on server at startup
