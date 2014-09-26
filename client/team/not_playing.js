@@ -26,12 +26,10 @@ Template.tNotPlaying.helpers({
       return true;
     }
   },
-  moneyOwed: function(evt, tmpl) {
-    var totalFeesStillOwed = this.seasonFeeOwed - this.seasonFeePaid;
-    if (totalFeesStillOwed > 0) {
-      return totalFeesStillOwed;
-    }
-  }
+
+  outCount: function() {
+    return Players.find({gameStatus: "out"}).count();
+  },
 
 });
 

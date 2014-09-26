@@ -7,7 +7,11 @@ Template.tFormerPlayers.cFormerPlayers = function() {
     }
   });
 };
-
+Template.tFormerPlayers.helpers({
+  formerCount: function () {
+    return Players.find({gameStatus: "former"}).count();
+  }
+});
 
 Template.tFormerPlayers.sPlayerId = function() {
     Session.get("sPlayerId");

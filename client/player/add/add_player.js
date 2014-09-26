@@ -10,8 +10,10 @@ Template.tAddPlayer.sPlayerId = function() {
 
 UI.body.events({
   'click': function (evt, tmpl) {
-    // console.log( evt.which );
-    if (Session.get("sPlayerEdit") === true) {
+
+    // console.log( evt.target.nodeName );
+    if (evt.target.nodeName !== "BUTTON") {
+
       Session.set("sPlayerEdit", false);
     } else {
       Session.set("sPlayerEdit", true);
@@ -36,10 +38,9 @@ Template.tAddPlayer.events({
   // when someone clicks a class of player-edit
   // set the session sPlayerEdit to true
   'click .player-edit': function(evt, tmpl) {
-    if (Session.get("sPlayerEdit", false)) {
-      
+    // if (Session.get("sPlayerEdit", false)) {
     Session.set("sPlayerEdit", true);
-    }
+    // }
     // tmpl.find('.first-name').focus();
 
   },

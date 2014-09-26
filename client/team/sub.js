@@ -24,6 +24,9 @@ Template.tSubs.helpers({
       return true;
     }
   },
+  subCount: function() {
+    return Players.find({gameStatus: "sub"}).count();
+  },
   missingPlayers: function() {
     if (Players.find({
       gameStatus: "out"
