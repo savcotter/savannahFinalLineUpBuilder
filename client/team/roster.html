@@ -6,7 +6,8 @@
   <ol>
     {{#each cRoster}}
       <li>
-        {{firstName}} <span class="{{moneyOwedStyle}}">{{moneyOwed}}</span><span class="badge">{{gerseyNumber}}</span> 
+        {{firstName}} <span class="{{moneyOwedStyle}}">{{moneyOwed}}</span><span class="badge">{{gerseyNumber}}</span>
+        <span><em>({{gameNotes}})</em></span>
         {{> tRemoveEditPlayer}}
         <!-- <ul>
           <li>{{fieldPosition}}</li>

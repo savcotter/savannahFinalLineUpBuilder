@@ -6,6 +6,7 @@
     {{#each cPlayersOff}}
       <li>
         {{firstName}} <span class="{{moneyOwedStyle}}">{{moneyOwed}}</span><span class="badge">{{gerseyNumber}}</span>
+        <span><em>({{gameNotes}})</em></span>
         {{> tRemoveEditPlayer}}
       </li>
     {{/each}}

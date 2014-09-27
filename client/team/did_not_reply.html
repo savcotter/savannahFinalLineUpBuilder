@@ -1,12 +1,12 @@
-<template name="tFormerPlayers">
-<h2>Former Players</h2>
-<p class="badge">{{formerCount}} former players</p>
-{{#if cFormerPlayers}}
+<template name="tDidNotReply">
+<h2>Did Not Reply</h2>
+<p class="badge">{{didNotReplyCount}} Did Not Reply Yet</p>
+{{#if cDidNotReply}}
   <ol>
-    {{#each cFormerPlayers}}
+    {{#each cDidNotReply}}
       <li>
         {{firstName}} <span class="badge">{{gerseyNumber}}</span>
-        <span><em>({{gameNotes}})</em></span>
+        <span><em>({{gameNotes}})</em></span> 
         {{> tRemoveEditPlayer}}
         <!-- <ul>
           <li>{{fieldPosition}}</li>

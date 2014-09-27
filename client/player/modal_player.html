@@ -20,6 +20,7 @@
                <select class="game-status form-control">
                 <option value="starting">Starting</option>
                 <option value="sub">Substitute</option>
+                <option value="noReply">Did Not Reply</option>
                 <option value="out">Not Playing</option>
                 <option value="former">Former Player</option>
               </select>
@@ -29,6 +30,8 @@
               <input type="text" class="season-fee-owed form-control" name="seasonFeeOwed" value="{{cPlayer.seasonFeeOwed}}" />
               <label for="seasonFeePaid">Season Fee Paid</label>
               <input type="text" class="season-fee-paid form-control" name="seasonFeePaid" value="{{cPlayer.seasonFeePaid}}" />
+              <label for="seasonFeePaid">Game Notes</label>
+              <input type="text" class="game-notes form-control" name="gameNotes" value="{{cPlayer.gameNotes}}" />
             </div>
           </div>
         </div>
