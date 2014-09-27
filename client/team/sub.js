@@ -11,8 +11,9 @@ Template.tSubs.cPlayers = function() {
     gameStatus: "sub"
   }, {
     sort: {
-      firstName: 1
+      firstName: "desc"
     }
+
   });
 };
 

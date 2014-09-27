@@ -25,14 +25,15 @@ Template.tModalPlayer.events({
     var seasonFeeOwed = $('.season-fee-owed').val();
     var seasonFeePaid = $('.season-fee-paid').val();
     var gameNotes = $('.game-notes').val();
-    updatePlayer(firstName, gameStatus, fieldPosition, gerseyNumber, seasonFeeOwed, seasonFeePaid, gameNotes);
+    var emailAddress = $('.email-address').val();
+    updatePlayer(firstName, gameStatus, fieldPosition, gerseyNumber, seasonFeeOwed, seasonFeePaid, gameNotes, emailAddress);
     $("#modal-id").modal("hide");
     Session.set('sPlayerId', null);
     Session.set('sPlayerEdit', false);
   }
 });
 
-var updatePlayer = function(firstName, gameStatus, fieldPosition, gerseyNumber, seasonFeeOwed, seasonFeePaid, gameNotes) {
+var updatePlayer = function(firstName, gameStatus, fieldPosition, gerseyNumber, seasonFeeOwed, seasonFeePaid, gameNotes, emailAddress) {
   Players.update(Session.get("sPlayerId"), {
     $set: {
       firstName: firstName,
@@ -41,7 +42,8 @@ var updatePlayer = function(firstName, gameStatus, fieldPosition, gerseyNumber, 
       gerseyNumber: gerseyNumber,
       seasonFeeOwed: seasonFeeOwed,
       seasonFeePaid: seasonFeePaid,
-      gameNotes: gameNotes
+      gameNotes: gameNotes,
+      emailAddress: emailAddress
     }
   });
 

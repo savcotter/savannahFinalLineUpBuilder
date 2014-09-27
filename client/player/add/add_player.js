@@ -65,6 +65,7 @@ Template.tAddPlayer.events({
     var seasonFeeOwed = tmpl.find('.season-fee-owed').value;
     var seasonFeePaid = tmpl.find('.season-fee-paid').value;
     var gameNotes = tmpl.find('.game-notes').value;
+    var emailAddress = tmpl.find('.email-address').value;
     
 
     // below is another way to grab the values without jquery
@@ -73,7 +74,7 @@ Template.tAddPlayer.events({
     // call the addPlayer method (note below it is a variable that has a function tied to it)
     //  and pass the addPlayer method, the variable firstName (which remember..
     // hold whatever the user typed in the text box... the name of the player)
-    addPlayer(firstName, fieldPosition, gameStatus, gerseyNumber, seasonFeeOwed, seasonFeePaid, gameNotes);
+    addPlayer(firstName, fieldPosition, gameStatus, gerseyNumber, seasonFeeOwed, seasonFeePaid, gameNotes, emailAddress);
 
   },
   'keyup .season-fee-paid': function(evt, tmpl) {
@@ -92,12 +93,13 @@ Template.tAddPlayer.events({
     var seasonFeeOwed = $('.season-fee-owed').val();
     var seasonFeePaid = $('.season-fee-paid').val();
     var gameNotes = $('.game-notes').val();
+    var emailAddress = $('.email-address').val();
       // set the session sPlayerEdit to false
       Session.set("sPlayerEdit", false);
       // call the addPlayer method (note below it is a variable that has a function tied to it)
       //  and pass the addPlayer method, the variable firstName (which remember..
       // hold whatever the user typed in the text box... the name of the player)
-      addPlayer(firstName, fieldPosition, gameStatus, gerseyNumber, seasonFeeOwed, seasonFeePaid, gameNotes);
+      addPlayer(firstName, fieldPosition, gameStatus, gerseyNumber, seasonFeeOwed, seasonFeePaid, gameNotes, emailAddress);
     }
   }
 });
@@ -106,7 +108,7 @@ Template.tAddPlayer.events({
 // it takes the firstName argument that was passed and stores it in its parameter
 //   then the method takes the parameter value and uses MongoDb syntax
 //   to insert the name into our collection (aka table)
-var addPlayer = function(firstName, fieldPosition, gameStatus, gerseyNumber, seasonFeePaid, seasonFeeOwed, gameNotes) {
+var addPlayer = function(firstName, fieldPosition, gameStatus, gerseyNumber, seasonFeePaid, seasonFeeOwed, gameNotes, emailAddress) {
   Players.insert({
     firstName: firstName,
     fieldPosition: fieldPosition,
@@ -114,6 +116,7 @@ var addPlayer = function(firstName, fieldPosition, gameStatus, gerseyNumber, sea
     gerseyNumber: gerseyNumber,
     seasonFeePaid: seasonFeePaid,
     seasonFeeOwed: seasonFeeOwed,
-    gameNotes: gameNotes
+    gameNotes: gameNotes,
+    emailAddress: emailAddress
   });
 };
