@@ -26,7 +26,9 @@ Template.tRoster.helpers({
   totalRoster: function() {
     return Players.find().count();
   }
+
 });
+
 
 Template.tRoster.events({
   'click .remove-player': function(evt, tmpl) {

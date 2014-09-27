@@ -12,12 +12,15 @@ UI.registerHelper('moneyOwedStyle', function(evt, tmpl) {
         return "danger";
     } else if (totalFeesStillOwed === 0) {
         return "success";
-    } else {
+    }
+    else {
         return "caution";
     }
 });
 
 UI.registerHelper('moneyOwed', function(evt, tmpl) {
     var totalFeesStillOwed = this.seasonFeeOwed - this.seasonFeePaid;
-    return totalFeesStillOwed;
+    if (totalFeesStillOwed > 0) {
+        return totalFeesStillOwed;
+    }
 });

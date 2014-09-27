@@ -12,15 +12,6 @@ Template.tStartingLineup.sPlayerId = function() {
     return Session.get("sPlayerId");
 };
 
-Template.tStartingLineup.helpers({
-    moneyOwed: function(evt, tmpl) {
-        var totalFeesStillOwed = this.seasonFeeOwed - this.seasonFeePaid;
-        if (totalFeesStillOwed > 0) {
-            return totalFeesStillOwed;
-        }
-    }
-});
-
 // when someone clicks on a class of remove-name
 // set the session 'sPlayerId' to the id of that record
 // call the remove method
